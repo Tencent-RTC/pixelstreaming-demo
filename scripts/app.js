@@ -2336,6 +2336,7 @@ function connect() {
         msg
       );
       onConfig(msg);
+      webRtcPlayerObj.createOffer();
     } else if (msg.type === "playerCount") {
       console.log(
         "%c[Inbound SS (playerCount)]",
